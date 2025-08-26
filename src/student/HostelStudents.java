@@ -8,9 +8,9 @@ public class HostelStudents extends Regularstudents{
         this.hostel_name=hostel_name;
         this.room_no=room_no;
     }
-    public void search(String name,int roll){
-        this.Name=name;
+    public void Search(String name,int roll){
         this.roll_no=roll;
-        System.out.println("Student name from the hostel is "+Name+" it's roll no. is "+roll_no);
+        this.Name=name;
+        System.out.println("Hostel student name is "+Name+" his roll no. is "+roll_no);
     }
 }
