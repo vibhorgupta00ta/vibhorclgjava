@@ -15,7 +15,7 @@ public class Regularstudents extends student {
         System.out.println("Child has paid the fees");
     }
     public void Search(String Name){
-        this.Name=Name;
+        this.setName(Name);
         System.out.println("Regular student name is "+Name);
     }
 }

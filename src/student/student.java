@@ -1,10 +1,10 @@
 package student;
 
 public class student {
-    public String Name;
-    String Department;
-    int roll_no;
-    static int age;
+    private String Name;
+   private String Department;
+    private int  roll_no;
+    private int age;
     float CGPA;
     static String collegename="Kiet";
     final String dept="AI";
@@ -59,5 +59,29 @@ public class student {
         student1.collegename="GLBAJAJ";//static hae toh sab me same changes aa jaega ek me karo toh bhi overall karo toh bhi
         System.out.println("Collegename is "+student2.collegename);
         System.out.println(student1.dept);
+    }
+    public String getName(){
+        return Name;
+    }
+    public void setName(String name){
+        this.Name=name;
+    }
+    public String getDepartment(){
+        return Department;
+    }
+    public void setDepartment(String department){
+        this.Department=department;
+    }
+    public int getRoll_no(){
+        return roll_no;
+    }
+    public void setRoll_no(int roll_no){
+        this.roll_no=roll_no;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setAge(int age){
+        this.age=age;
     }
 }
