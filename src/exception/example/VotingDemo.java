@@ -18,12 +18,15 @@ class Voting {
     }
 }
 public class VotingDemo{
-    public static void main(String[] args){
+    public static void main(String[] args) throws  InvalidAgeException {
         Voting voting = new Voting();
         try {
-            voting.EligibilityCheck(80);
+            voting.EligibilityCheck(10);
         }catch(InvalidAgeException e){
             System.out.println(e.getMessage());
+       }
+        finally {
+            System.out.println("2");
         }
     }
 }
